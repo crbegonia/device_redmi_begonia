@@ -1,8 +1,7 @@
 [
   {
-    "repository" : "AgentFabulous/begonia",
-    "target_path": "kernel/xiaomi/mt6785",
-    "branch" : "android-11.0"
+    "repository" : "kernel_xiaomi_mt6785",
+    "target_path": "kernel/xiaomi/mt6785"
   },
   {
     "repository" : "vendor_redmi_begonia",
@@ -21,8 +20,7 @@
     "target_path": "vendor/mediatek/interfaces"
   },
   {
-    "repository" : "Descendant-Devices/vendor_mediatek_ims",
-    "target_path": "vendor/mediatek/ims",
-    "branch"     : "eleven"
+    "repository" : "vendor_mediatek_ims",
+    "target_path": "vendor/mediatek/ims"
   }
 ]
