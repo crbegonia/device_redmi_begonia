@@ -56,7 +56,6 @@ on property:persist.service.folio_daemon=1
     
 # Initialization
 on property:sys.boot_completed=1
-    setprop spectrum.support 1
     # chown
     chown system system /sys/devices/system/cpu/cpufreq/policy0/*
     chown system system /sys/devices/system/cpu/cpufreq/policy6/*
