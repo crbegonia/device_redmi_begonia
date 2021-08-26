@@ -26,6 +26,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from begonia device
 $(call inherit-product, device/redmi/begonia/device.mk)
 
+# Inherit custom configuration
+$(call inherit-product, vendor/MiuiCore/config.mk)
+
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
