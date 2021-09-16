@@ -129,6 +129,3 @@ ro.sf.blurs_are_expensive=1
 
 # Spectrum
 spectrum.support=1
-
-#dolby 
-sys.keep_app_1=com.dolby.ds1appUI
