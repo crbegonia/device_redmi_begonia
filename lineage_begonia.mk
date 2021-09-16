@@ -28,7 +28,6 @@ $(call inherit-product, device/redmi/begonia/device.mk)
 
 # Inherit custom configuration
 $(call inherit-product, vendor/MiuiCore/config.mk)
-$(call inherit-product, vendor/ANXCamera/config.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
