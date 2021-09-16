@@ -24,17 +24,6 @@
     "target_path": "vendor/mediatek/ims"
   },
   {
-    "repository" : "vendor_MiuiCore",
-    "target_path": "vendor/MiuiCore"
-  },
-  {
-    "repository" : "vendor_ANXCamera",
-    "target_path": "vendor/ANXCamera"
-  },
-  {
-    "repository" : "vendor_dolby",
-    "target_path": "vendor/dolby"
-  {
     "repository": "device_mediatek_sepolicy",
     "target_path": "device/mediatek/sepolicy"
   }
