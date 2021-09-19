@@ -12,19 +12,7 @@
     "target_path": "vendor/redmi/begonia-firmware"
   },
   {
-    "repository" : "vendor_mediatek_opensource",
-    "target_path": "vendor/mediatek/opensource"
-  },
-  {
-    "repository" : "vendor_mediatek_interfaces",
-    "target_path": "vendor/mediatek/interfaces"
-  },
-  {
-    "repository" : "vendor_mediatek_ims",
-    "target_path": "vendor/mediatek/ims"
-  },
-  {
-    "repository": "device_mediatek_sepolicy",
+    "repository" : "device_mediatek_sepolicy",
     "target_path": "device/mediatek/sepolicy"
   }
 ]
