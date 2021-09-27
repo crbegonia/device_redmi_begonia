@@ -320,11 +320,11 @@ on post-fs-data
     setrlimit 8 -1 -1
 
     # CMDQ
-    chmod 0640 /dev/mtk_cmdq
+    chmod 0644 /dev/mtk_cmdq
     chown system system /dev/mtk_cmdq
 
     # MDP SYNC
-    chmod 0640 /dev/mdp_sync
+    chmod 0644 /dev/mdp_sync
     chown system system /dev/mdp_sync
 
     #OFFLOAD SERVICE
@@ -938,7 +938,7 @@ service charger /bin/charger
     seclabel u:r:healthd:s0
 
 # MI Thermald
-service mi_thermald /system/vendor/bin/mi_thermald
+service mi_thermald /vendor/bin/mi_thermald
     class main
     user root
     group system
@@ -962,10 +962,6 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.1-service
 
 on property:ro.boot.product.hardware.sku=begonia
     start vendor.nfc_hal_service
-
-# Disable AOSP RIL if MTK RIL is up
-on property:vendor.ril.mtk=1
-    stop vendor.ril-daemon
 
 on property:persist.sys.begonia.dt2w=0
     exec /system/bin/sendevent /dev/input/event2 0 1 4
