@@ -1,3 +1,4 @@
+DTBO_OUT := $(PRODUCT_OUT)/dtbo
 APPEND_CERTS := $(DEVICE_PATH)/dtbo/append_certs.py
 BOARD_DTBO_CFG := $(DTBO_OUT)/dtboimg.cfg
 MKDTIMG := $(HOST_OUT_EXECUTABLES)/mkdtimg$(HOST_EXECUTABLE_SUFFIX)
