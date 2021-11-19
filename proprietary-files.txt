@@ -133,6 +133,7 @@ vendor/lib/libaudioloudc.so
 vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiosmartpamtk.so
 vendor/lib/libaudiotoolkit_vendor.so
+vendor/lib/libwebrtc_audio_preprocessing.so
 vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
@@ -146,18 +147,15 @@ vendor/lib64/libaudioloudc.so
 vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiosmartpamtk.so
 vendor/lib64/libaudiotoolkit_vendor.so
+vendor/lib64/libwebrtc_audio_preprocessing.so
 
 # Audio-Hardware
 system_ext/lib/vendor.mediatek.hardware.audio@6.1.so
 system_ext/lib64/vendor.mediatek.hardware.audio@6.1.so
-vendor/bin/hw/android.hardware.audio.service.mediatek
-vendor/etc/init/android.hardware.audio.service.mediatek.rc
-vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib/hw/audio.primary.mt6785.so
 vendor/lib/hw/audio.r_submix.mt6785.so
 vendor/lib/hw/audio.usb.mt6785.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
-vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6785.so
 vendor/lib64/hw/audio.r_submix.mt6785.so
 vendor/lib64/hw/audio.usb.mt6785.so
@@ -853,19 +851,13 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
-vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib/libkeystore-wifi-hidl.so
-vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
-vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
-vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
-vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
 # Lights
 vendor/bin/hw/android.hardware.lights-service.mediatek
@@ -1106,15 +1098,6 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 bin/vtservice
 etc/apns-conf.xml:product/etc/apns-conf.xml
 etc/init/init.vtservice.rc
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
-framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-ims-legacy.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
--framework/mediatek-telephony-common.jar
 lib/libcomutils.so
 lib/libimsma.so
 lib/libimsma_adapt.so
@@ -2032,6 +2015,7 @@ vendor/lib/libteeclientjni@1.1.so
 vendor/lib/libtflite_mtk.so
 vendor/lib/libtflite_mtk_static_R.so
 vendor/lib/libthha.so
+vendor/lib/libtinyxml.so
 vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/libudf.so
 vendor/lib/libvc1dec_sa.ca7.so
@@ -2171,7 +2155,6 @@ vendor/lib64/libfeature_lmv.so
 vendor/lib64/libfeature_rss.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libfile_op.so
-vendor/lib64/libfmq.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libfpspolicy.so
 vendor/lib64/libfvaudio.so
@@ -2250,6 +2233,7 @@ vendor/lib64/libteeclientjni@1.1.so
 vendor/lib64/libtflite_mtk.so
 vendor/lib64/libtflite_mtk_static_R.so
 vendor/lib64/libthha.so
+vendor/lib64/libtinyxml.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libudf.so
 vendor/lib64/libvcodec_oal.so

@@ -8,6 +8,10 @@
     "target_path": "vendor/redmi/begonia"
   },
   {
+    "repository" : "vendor_redmi_begonia-ims",
+    "target_path": "vendor/redmi/begonia-ims"
+  },
+  {
     "repository" : "vendor_redmi_begonia-firmware",
     "target_path": "vendor/redmi/begonia-firmware"
   },

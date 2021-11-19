@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 DEVICE_PATH := device/redmi/begonia
 
 # Architecture
@@ -47,6 +49,7 @@ TARGET_BOARD_PLATFORM_GPU := mali-g76mc4
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_SECOND_OFFSET := 0x00e88000
@@ -56,7 +59,6 @@ BOARD_RAMDISK_OFFSET     := 0x07c08000
 BOARD_DTB_OFFSET := 0x0bc08000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_BOOTIMG_HEADER_VERSION := 2
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6785
@@ -66,7 +68,9 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
+BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_CUSTOM_DTBOIMG_MK := $(DEVICE_PATH)/dtbo/dtbo.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := begonia
@@ -142,10 +146,10 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Sepolicy
-include device/mediatek/sepolicy/sepolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+#include device/mediatek/sepolicy/sepolicy.mk
+#BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+#BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Inherit from the proprietary version
 -include vendor/redmi/begonia/BoardConfigVendor.mk
